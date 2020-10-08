@@ -8,6 +8,9 @@ public class ListaIngles extends Lista{
 	
 	public void configurar() {
 		
+		
+		
+		
 	}	
 	
 	

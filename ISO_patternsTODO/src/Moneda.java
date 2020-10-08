@@ -7,8 +7,8 @@ public abstract class Moneda {
 	 *    MonedaUSA
 	 */
 	
-	private String texto;
-	private double valor;
+	protected String texto;
+	protected double valor;
 	
 	public Moneda() {
 		

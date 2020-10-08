@@ -9,7 +9,7 @@ public abstract class Lista {
 	 */
 	
 	
-	private ArrayList<Integer> elementos;
+	protected ArrayList<Integer> elementos;
 	
 	
 	public Lista() {
