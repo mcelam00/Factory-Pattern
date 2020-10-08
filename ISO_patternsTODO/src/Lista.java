@@ -9,27 +9,54 @@ public abstract class Lista {
 	 */
 	
 	
-	private ArrayList<Integer> elementos;
+	private ArrayList<Integer> elementos; //atributo lista de enteros
 	
+	
+	/**
+	 * Constructor de la clase: No se puede instanciar una clase abstracta sería para usar desde las subclases
+	 */
 	
 	public Lista() {
 		
 	}
 	
 	
+	/**
+	 * Getter
+	 * @param indice Posición del arraylist que queremos devolver su valor
+	 * @return el entero en la posicion indice
+	 */
+	
 	public int getElemento(int indice) {
-		
+		return this.elementos.get(indice);
 	}
 	
+	/**
+	 * Setter
+	 * @param elem Elemento que se desea insertar en el arraylist
+	 */
 	
 	public void insertarElemento(int elem) {
-		
+		this.elementos.add(elem);
 	}
 	
+	/**
+	 * Método que imprime el contenido de la lista
+	 * 
+	 */
 	
 	public void visualizar() {
 		
+		for(int i = 0; i < this.elementos.size(); i++) {
+			
+			System.out.println("Lista: "+elementos.get(i)+"\n");  			
+		}
+
 	}
+	
+	/**
+	 * Método abstracto implementado en las subclases
+	 */
 	
 	public abstract void configurar();
 	
