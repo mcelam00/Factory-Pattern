@@ -32,8 +32,7 @@ public class Cliente {
 		lista = this.factoria.getLista();	
 		
 		lista.visualizar();
-		System.out.println("Moneda texto: "+moneda.getTexto()+"\n"+"Moneda valor: "+moneda.getValor()+"\n"); //heredan el getter ambos concretos
-
+		moneda.visualizar();
 		
 	}
 	
