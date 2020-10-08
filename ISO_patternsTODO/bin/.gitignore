@@ -5,3 +5,5 @@
 /Moneda.class
 /MonedaUSA.class
 /MonedaEspaña.class
+/AbstractFactoryIdiomas.class
+/ConcretaFactoryIngles.class
