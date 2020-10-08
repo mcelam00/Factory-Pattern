@@ -20,7 +20,7 @@ public class Cliente {
 	
 	/**
 	 * Método que imprime los resultados de la creación del objeto concreto (puesto que programo en global para ambos Esp/Ing) para ver que la factoría correspondiente ha desempeñado bién su trabajo
-	 * 
+	 * Se propaga la llamada al "visualizar" local de cada clase abstracta
 	 */
 	
 	public void visualizaElems() {
@@ -31,9 +31,8 @@ public class Cliente {
 		moneda = this.factoria.getMoneda();		//utilizamos la factoria para llamar a los métodos que gestionan la creación de los objetos concretos
 		lista = this.factoria.getLista();	
 		
-		
+		lista.visualizar();
 		System.out.println("Moneda texto: "+moneda.getTexto()+"\n"+"Moneda valor: "+moneda.getValor()+"\n"); //heredan el getter ambos concretos
-		System.out.println("Lista: "+lista.getElemento(0)+", "+lista.getElemento(1)+"\n"); //heredan el getter ambos concretos
 
 		
 	}
