@@ -9,7 +9,7 @@ public class MonedaEspaña extends Moneda{
 	}
 	
 	/**
-	 * Al llamar a consfigurar se estipula su valor
+	 * Al llamar a configurar se estipula su valor
 	 */
 	
 	public void configurar() {

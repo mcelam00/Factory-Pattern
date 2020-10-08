@@ -11,7 +11,7 @@ public class ListaEspañol extends Lista{
 	}
 
 	/**
-	 * Inserta un valor en la lista 
+	 * Inserta una cantidad de monedas en la lista 
 	 */
 	
 	
