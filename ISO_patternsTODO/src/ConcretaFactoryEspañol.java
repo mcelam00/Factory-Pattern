@@ -17,6 +17,7 @@ public class ConcretaFactoryEspañol implements AbstractFactoryIdiomas{
 		Moneda monConcretaESP;
 		
 		monConcretaESP = new MonedaEspaña();
+		monConcretaESP.configurar();
 		
 		return monConcretaESP;
 		
@@ -27,12 +28,13 @@ public class ConcretaFactoryEspañol implements AbstractFactoryIdiomas{
 	 */
 	
 	public Lista getLista() {
-		Lista listConcretaESP;
+		Lista listConcretaESP; //creo referencia de tipo la superclase
 		
-		listConcretaESP = new ListaEspañol();
+		listConcretaESP = new ListaEspañol(); //creo el objeto concreto de manera que referencio a él con mi referencia superclase
+		listConcretaESP.configurar();
 		
 		
-		return listConcretaESP;
+		return listConcretaESP; //lo devuelvo
 		
 	}	
 	
