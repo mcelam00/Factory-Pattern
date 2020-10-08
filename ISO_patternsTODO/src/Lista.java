@@ -31,7 +31,7 @@ public abstract class Lista {
 		
 	}
 	
-	abstract public void configurar();
+	public abstract void configurar();
 	
 	
 	
