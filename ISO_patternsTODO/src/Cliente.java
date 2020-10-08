@@ -3,7 +3,7 @@ public class Cliente {
 	
 	
 	
-	private AbstractFactoryIdiomas factoria; //Referencia para almacenar la factoría concreta usando su abstracción (superclase-Interfaz) para apuntar a la concreta segun corresponda por la instancia pasada al constructor
+	private AbstractFactoryIdiomas factory; //Referencia para almacenar la factoría concreta usando su abstracción (superclase-Interfaz) para apuntar a la concreta segun corresponda por la instancia pasada al constructor
 										//es como si tuviera un atributo de tipo CFingl o CFEsp segun corresponda por la instancia que le llegue al constructor
 	
 	/**
@@ -13,7 +13,7 @@ public class Cliente {
 	
 	public Cliente(AbstractFactoryIdiomas factoria) {
 		
-		this.factoria = factoria;
+		this.factory = factoria;
 		
 		
 	}
@@ -28,8 +28,8 @@ public class Cliente {
 		Moneda moneda;
 		Lista lista;
 		
-		moneda = this.factoria.getMoneda();		//utilizamos la factoria para llamar a los métodos que gestionan la creación de los objetos concretos
-		lista = this.factoria.getLista();	
+		moneda = this.factory.getMoneda();		//utilizamos la factoria para llamar a los métodos que gestionan la creación de los objetos concretos
+		lista = this.factory.getLista();	
 		
 		lista.visualizar();
 		moneda.visualizar();
