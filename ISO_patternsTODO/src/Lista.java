@@ -17,7 +17,7 @@ public abstract class Lista {
 	 */
 	
 	public Lista() {
-		
+		this.elementos = new ArrayList<Integer>();
 	}
 	
 	
@@ -46,11 +46,17 @@ public abstract class Lista {
 	 */
 	
 	public void visualizar() {
+
+		System.out.print("Contenido Lista:");  
+
 		
 		for(int i = 0; i < this.elementos.size(); i++) {
 			
-			System.out.println("Lista: "+elementos.get(i)+"\n");  			
+			System.out.print(" "+elementos.get(i));
 		}
+		
+		
+		System.out.println();  
 
 	}
 	
