@@ -18,6 +18,8 @@ public class ListaEspañol extends Lista{
 	public void configurar() {
 
 		this.insertarElemento(1);
+		this.insertarElemento(1);
+		this.insertarElemento(2);
 		
 	}
 	
