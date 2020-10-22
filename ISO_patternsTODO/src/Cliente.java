@@ -15,6 +15,8 @@ public class Cliente {
 	public Cliente(AbstractFactoryIdiomas factoria) {
 		
 		this.factory = factoria;
+		this.moneda = factoria.getMoneda();
+		this.lista = factoria.getLista();
 		
 		
 	}
@@ -26,8 +28,8 @@ public class Cliente {
 	
 	public void visualizaElems() {
 		
-		this.moneda = this.factory.getMoneda();		//utilizamos la factoria para llamar a los métodos que gestionan la creación de los objetos concretos
-		this.lista = this.factory.getLista();	
+		//this.moneda = this.factory.getMoneda();		//utilizamos la factoria para llamar a los métodos que gestionan la creación de los objetos concretos
+		//this.lista = this.factory.getLista();	
 		
 		lista.visualizar();
 		moneda.visualizar();
